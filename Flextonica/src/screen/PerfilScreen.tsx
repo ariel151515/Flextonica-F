@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Perfil: React.FC = () => {
+const PerfilScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Perfil</Text>
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Perfil;
+export default PerfilScreen;

@@ -3,36 +3,22 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 
 // Screens
-import HomeScreen from '../screen/Home';
-import SettingScreen from '../screen/Setting';
-import PerfilScreen from '../screen/Perfil';
+import DiarioScreen from '../screen/DiarioScreen';
+import SemanalScreen from '../screen/SemanalScreen';
+import PortadaScreen from '../screen/PortadaScreen';
 
 // TabNavigator
 import TabNavigator from './TabNavigator';
 
-// Define the type for the stack navigator's parameters
-type RootStackParamList = {
-  Tabs: undefined;
-  Home: undefined;
-  Setting: undefined;
-  Perfil: undefined;
-};
-
 // Create the stack navigator
-const Stack = createStackNavigator<RootStackParamList>();
+const Stack = createStackNavigator();
 
 const AppNavigator: React.FC = () => {
   return ( 
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen 
-          name="Tabs" 
-          component={TabNavigator}  
-          options={{ headerShown: false }} 
-        />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Setting" component={SettingScreen} />
-        <Stack.Screen name="Perfil" component={PerfilScreen} />
+        <Stack.Screen name="Tabs" component={TabNavigator}  options={{ headerShown: false }} />
+        <Stack.Screen name="Portada" component={PortadaScreen} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
