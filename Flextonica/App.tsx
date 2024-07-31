@@ -8,7 +8,7 @@ import AppNavigator from './src/navigation/AppNavigator';
 const App: React.FC = () => {
   return (
     <>
-      <StatusBar style="auto" backgroundColor="#ccc" />
+      <StatusBar style="auto" />
       <AppNavigator />
     </>
   );
