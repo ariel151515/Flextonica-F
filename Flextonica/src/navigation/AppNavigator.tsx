@@ -6,6 +6,9 @@ import { createStackNavigator, StackNavigationProp } from '@react-navigation/sta
 import DiarioScreen from '../screen/DiarioScreen';
 import SemanalScreen from '../screen/SemanalScreen';
 import PortadaScreen from '../screen/PortadaScreen';
+import LoginScreen from '../screen/Login/LoginScreen';
+import CrearCuentaScreen from '../screen/CrearCuenta/CrearCuentaScreen';
+import PerfilScreen from '../screen/PerfilScreen';
 
 // TabNavigator
 import TabNavigator from './TabNavigator';
@@ -19,6 +22,9 @@ const AppNavigator: React.FC = () => {
       <Stack.Navigator>
         <Stack.Screen name="Tabs" component={TabNavigator}  options={{ headerShown: false }} />
         <Stack.Screen name="Portada" component={PortadaScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Login" component={LoginScreen} options={{ headerTitle: ' '}}/>
+        <Stack.Screen name="CrearCuenta" component={CrearCuentaScreen} options={{ headerTitle: ' '}}/>
+        <Stack.Screen name="Perfil" component={PerfilScreen} options={{ headerTitle: ' '}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

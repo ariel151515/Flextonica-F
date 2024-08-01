@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
@@ -7,11 +7,11 @@ import { StackNavigationProp } from '@react-navigation/stack';
 const DiarioScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Portada')}>
         <Text style={styles.buttonText}>Go to Profile</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
