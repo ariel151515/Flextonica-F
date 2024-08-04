@@ -32,33 +32,30 @@ export const FormularioCrearCuenta: React.FC = () => {
     <View className='flex-1 bg-white mt-10'>
       <View>
           <View className='flex flex-row items-center gap-3'>
-              <Feather name="user" size={18} color="black" />
               <Text>Nombre</Text>
           </View>
           <View className='mt-3'>
               <TextInput placeholder='Ingresar nombre'
-              className='border border-slate-300 px-5 py-2 rounded-sm text-base'/>
+              className='border border-slate-300 px-5 py-2 rounded-lg text-base'/>
           </View>
       </View>
 
       <View className='mt-5'>
           <View className='flex flex-row items-center gap-3'>
-              <Fontisto name="email" size={18} color="black" />
               <Text>Email</Text>
           </View>
           <View className='mt-3'>
               <TextInput placeholder='Ingresar email'
-              className='border border-slate-300 px-5 py-2 rounded-sm text-base'/>
+              className='border border-slate-300 px-5 py-2 rounded-lg text-base'/>
           </View>
       </View>
 
       <View className='mt-5'>
           <View className='flex flex-row items-center gap-3'>
-              <AntDesign name="lock1" size={18} color="black" />
               <Text>Contraseña</Text>
           </View>
           <View className='mt-3'>
-              <View className='flex flex-row items-center border border-slate-300 rounded-sm justify-between pr-4'>
+              <View className='flex flex-row items-center border border-slate-300 rounded-lg justify-between pr-4'>
                 <View>
                    <TextInput placeholder='Ingresar contraseña'
                               className='px-5 py-2 rounded-sm text-base'

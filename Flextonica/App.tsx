@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, SafeAreaView } from 'react-native';
 
+
 // Navigation
 import AppNavigator from './src/navigation/AppNavigator';
 

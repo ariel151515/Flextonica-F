@@ -10,8 +10,8 @@ const LoginScreen: React.FC = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView className='flex-1 bg-white px-5'>
-      <Text className='font-sans text-xl font-bold mt-5'>Ingresar a tu cuenta</Text>
+    <SafeAreaView className='flex-1 px-5 bg-white'>
+      <Text className='font-sans text-xl font-bold mt-5 mb-10'>Ingresar a tu cuenta</Text>
       <FormularioLogin />
     </SafeAreaView>
   );
