@@ -12,7 +12,8 @@ module.exports = {
         'grisTextoPortada': 'rgba(154, 154, 154, 1)',
         'darkModeGrIsOscu':'rgba(21, 23, 36, 1)',
         'darkModeGrisClar':'#fff',
-        'grisClar':'#73767D'
+        'grisClar':'#73767D',
+        'azulPrimario':'rgba(79, 154, 255, 1)'
       },
     },
   },

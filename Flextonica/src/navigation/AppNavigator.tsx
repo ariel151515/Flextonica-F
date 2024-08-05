@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
+import { ContextoUser } from '../context/contextoUser';
 
 // Screens
 import DiarioScreen from '../screen/DiarioScreen';
@@ -17,10 +18,13 @@ import TabNavigator from './TabNavigator';
 const Stack = createStackNavigator();
 
 const AppNavigator: React.FC = () => {
+  // Usa useContext para acceder al contexto
+  const { isAuthenticated } = useContext(ContextoUser); // Asegúrate de usar correctamente el contexto
+
   return ( 
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Tabs" component={TabNavigator}  options={{ headerShown: false }} />
+        <Stack.Screen name="Tabs" component={isAuthenticated ? TabNavigator : PortadaScreen}  options={{ headerShown: false }} />
         <Stack.Screen name="Portada" component={PortadaScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerTitle: ' '}}/>
         <Stack.Screen name="CrearCuenta" component={CrearCuentaScreen} options={{ headerTitle: ' '}}/>
