@@ -1,8 +1,9 @@
 // services/authService.ts
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 import app from './../../firebase/firebase-config';
 import { Alert } from 'react-native';
 import { FirebaseError } from 'firebase/app';
+import { useNavigation } from '@react-navigation/native';
 
 const auth = getAuth(app);
 
@@ -83,3 +84,13 @@ export const Register = async (email: string, password: string, navigation: any,
     setLoading(false);
   }
 };
+
+
+export const BtnCerrarSesion = async () => {
+    try{
+      await auth.signOut();
+      // console.log('Cerrar Sesion')
+    }catch(e){
+      console.log('Error al cerrar sesión', e);
+    }
+  }
