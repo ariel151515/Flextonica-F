@@ -12,7 +12,7 @@ const TabNavigator: React.FC = () => {
     <Tab.Navigator>
       <Tab.Screen name="Diario" component={DiarioScreen} />
       <Tab.Screen name="Semanal" component={SemanalScreen} />
-      <Tab.Screen name="Menu" component={MenuScreen} />
+      <Tab.Screen name="Menu" component={MenuScreen}  options={{ headerShown: false }}/>
     </Tab.Navigator>
   )
 }
