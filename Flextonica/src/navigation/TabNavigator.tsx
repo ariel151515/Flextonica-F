@@ -15,7 +15,7 @@ const TabNavigator: React.FC = () => {
     <Tab.Navigator>
       <Tab.Screen 
         name="Diario" 
-        component={DiarioScreen}
+        component={DiarioScreen} 
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <MaterialCommunityIcons 
@@ -29,6 +29,7 @@ const TabNavigator: React.FC = () => {
               Diario
             </Text>
           ),
+          headerShown: false
         }}
       />
       <Tab.Screen 
@@ -47,6 +48,7 @@ const TabNavigator: React.FC = () => {
               Semanal
             </Text>
           ),
+          headerShown: false
         }}
       />
       <Tab.Screen 
@@ -65,6 +67,7 @@ const TabNavigator: React.FC = () => {
               Nutrición
             </Text>
           ),
+          headerShown: false
         }}
       />
       <Tab.Screen 

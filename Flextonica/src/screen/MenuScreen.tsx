@@ -23,8 +23,6 @@ const MenuScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar barStyle="dark-content" />
-
       <ScrollView>
           <View style={styles.container}>
             <View>

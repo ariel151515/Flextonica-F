@@ -3,7 +3,6 @@ import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-na
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
-
 const AlimentosScreen: React.FC = () => {
   const navigation = useNavigation();
   return (

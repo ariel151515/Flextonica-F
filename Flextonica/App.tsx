@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <PorveedorContextoUser>
       <SafeAreaView style={styles.container}>
-        <StatusBar style="auto" />
+        <StatusBar style="dark-content"/>
         <AppNavigator />
       </SafeAreaView>
     </PorveedorContextoUser>

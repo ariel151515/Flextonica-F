@@ -13,7 +13,8 @@ module.exports = {
         'darkModeGrIsOscu':'rgba(21, 23, 36, 1)',
         'darkModeGrisClar':'#fff',
         'grisClar':'#73767D',
-        'azulPrimario':'rgba(79, 154, 255, 1)'
+        'azulPrimario':'rgba(79, 154, 255, 1)',
+        'grisBase':'rgba(214, 214, 214, 1)'
       },
     },
   },
