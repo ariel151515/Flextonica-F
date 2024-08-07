@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, Image, StyleSheet, StatusBar, ScrollView } from 'react-native';
+import { View, Text, SafeAreaView, Image, StyleSheet, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -22,7 +22,7 @@ import { BtnCerrarSesion } from './../../src/utils/authService'
 const MenuScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView>
       <ScrollView>
           <View style={styles.container}>
             <View>
@@ -103,11 +103,6 @@ const MenuScreen: React.FC = () => {
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#FFF', // Asegúrate de que este color coincide con tu diseño
-    paddingTop:32
-  },
   container: {
     flexDirection: 'row',
     alignItems: 'center',

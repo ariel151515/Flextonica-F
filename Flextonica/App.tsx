@@ -9,10 +9,7 @@ import AppNavigator from './src/navigation/AppNavigator';
 const App: React.FC = () => {
   return (
     <PorveedorContextoUser>
-      <SafeAreaView style={styles.container}>
-        <StatusBar style="dark-content"/>
         <AppNavigator />
-      </SafeAreaView>
     </PorveedorContextoUser>
   );
 }

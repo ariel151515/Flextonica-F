@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
@@ -22,10 +22,8 @@ const PortadaScreen: React.FC = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
   return (
-    <ImageBackground 
-      source={require('../../assets/portada.png')} 
-      style={styles.background}
-    >
+    <ImageBackground source={require('../../assets/portada.png')} style={styles.background}>
+      <StatusBar hidden={true} />
       <View style={styles.overlay}>
         <View className='bottom-0 absolute pb-10'>
           <Text className='font-sans text-4xl font-bold text-white text-center'>Libera Tu Potencial al Máximo</Text>
