@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, TextInput, SafeAreaView, Alert, ActivityIndicator } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, SafeAreaView, Alert, ActivityIndicator, StatusBar } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
@@ -75,16 +75,17 @@ export const FormularioLogin: React.FC = () => {
       </View>
 
       <TouchableOpacity
-          onPress={handleLogin}
-          className={`flex items-center justify-center mt-10 px-10 py-3 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-azulPrimario'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
-          disabled={isButtonDisabled}
-        >
-          {loading ? (
-            <ActivityIndicator size="small" color="#fff" />
-          ) : (
-            <Text className='font-sans font-bold text-base text-white'>Ingresar</Text>
-          )}
-        </TouchableOpacity>
+            onPress={handleLogin}
+            className={`flex items-center justify-center mt-10 px-10 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-azulPrimario'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
+            style={{ height:50}}
+            disabled={isButtonDisabled}
+          >
+            {loading ? (
+              <ActivityIndicator size="small" color="#fff" />
+            ) : (
+              <Text className='font-sans font-bold text-base text-white'>Ingresar</Text>
+            )}
+      </TouchableOpacity>
 
       <View className='items-center'>
          <Text className='mt-6 text-sm text-slate-400'>¿Olvidaste tu contraseña?</Text>

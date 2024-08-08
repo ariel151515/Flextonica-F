@@ -23,7 +23,7 @@ const MenuScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView>
-      <StatusBar barStyle="dark-content" backgroundColor="#F3F3F3" />
+      <StatusBar hidden={false} barStyle="dark-content" backgroundColor="#F3F3F3" />
       <ScrollView>
           <View style={styles.container}>
             <View>
@@ -90,8 +90,8 @@ const MenuScreen: React.FC = () => {
 
                 <TouchableOpacity onPress={BtnCerrarSesion}>
                     <View className='flex-row items-center pl-4'>
-                      <View><Entypo name="login" size={24} color="#4F9AFF" /></View>
-                      <View><Text className='pl-4 font-sans text-base font-semibold text-azulPrimario'>Cerrar sesión</Text></View>
+                      <View><Entypo name="login" size={24} color="#000" /></View>
+                      <View><Text className='pl-4 font-sans text-base font-semibold text-black'>Cerrar sesión</Text></View>
                     </View>
                 </TouchableOpacity>
 

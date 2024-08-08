@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, SafeAreaView, StatusBar } from 'react-native';
 const PerfilScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F3F3F3" />
+      <StatusBar hidden={false} barStyle="dark-content" backgroundColor="#F3F3F3" />
       <Text>Perfil</Text>
     </SafeAreaView>
   );

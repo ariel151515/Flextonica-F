@@ -1,0 +1,10 @@
+eas update
+actualiza la app en expo 
+
+¿Cómo se utilizan los perfiles de construcción?
+Cuando ejecutas un comando de construcción con EAS, como eas build, puedes 
+especificar qué perfil de construcción utilizar. Por ejemplo:
+
+eas build --profile development usará el perfil de desarrollo.
+eas build --profile production usará el perfil de producción.
+Esto permite que la misma base de código se construya de manera diferente según las necesidades, sin que tengas que hacer cambios manuales en la configuración.

@@ -5,12 +5,19 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "releaseChannel": "development",
+      "channel": "development"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "releaseChannel": "preview",
+      "channel": "preview"
     },
-    "production": {}
+    "production": {
+      "releaseChannel": "production",
+      "channel": "production"
+    }
   },
   "submit": {
     "production": {}

@@ -23,7 +23,7 @@ const PortadaScreen: React.FC = () => {
 
   return (
     <ImageBackground source={require('../../assets/portada.png')} style={styles.background}>
-      <StatusBar hidden={true} />
+      <StatusBar hidden={false} barStyle="dark-content" backgroundColor="transparent" translucent={true} />
       <View style={styles.overlay}>
         <View className='bottom-0 absolute pb-10'>
           <Text className='font-sans text-4xl font-bold text-white text-center'>Libera Tu Potencial al Máximo</Text>
