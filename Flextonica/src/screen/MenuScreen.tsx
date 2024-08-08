@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, Image, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, SafeAreaView, Image, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -23,14 +23,15 @@ const MenuScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView>
+      <StatusBar barStyle="dark-content" backgroundColor="#F3F3F3" />
       <ScrollView>
           <View style={styles.container}>
             <View>
               <Image source={avatar} style={styles.avatar} />
             </View>
             <View style={styles.textContainer}>
-              <Text className='text-white font-sans text-xl font-bold'>Hola Ariel</Text>
-              <Text className='text-white font-sans text-base'>arielgentile89@gmail.com</Text>
+              <Text className='text-blak font-sans text-xl font-bold'>Hola Ariel</Text>
+              <Text className='text-blak font-sans text-base'>arielgentile89@gmail.com</Text>
             </View>
           </View>
 
@@ -39,58 +40,58 @@ const MenuScreen: React.FC = () => {
 
                 <View className='flex-row items-center pl-4'>
                       <View><AntDesign name="user" size={24} color="black" /></View>
-                      <View><Text className='pl-4 font-sans text-lg font-semibold'>Mi perfil</Text></View>
+                      <View><Text className='pl-4 font-sans text-base font-semibold'>Mi perfil</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><MaterialIcons name="calendar-today" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Diario</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Diario</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><MaterialCommunityIcons name="calendar-week" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Semanal</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Semanal</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><FontAwesome5 name="nutritionix" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Objetivos</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Objetivos</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><MaterialCommunityIcons name="nutrition" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Nutricion</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Nutricion</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><Entypo name="database" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Alimentos</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Alimentos</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><Ionicons name="analytics" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Seguimiento</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Seguimiento</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><AntDesign name="videocamera" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Totoriales</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Totoriales</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><FontAwesome name="support" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Soporte</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Soporte</Text></View>
                 </View>
 
                 <View className='flex-row items-center pl-4'>
                   <View><Feather name="settings" size={24} color="black" /></View>
-                  <View><Text className='pl-4 font-sans text-lg font-semibold'>Configuracion</Text></View>
+                  <View><Text className='pl-4 font-sans text-base font-semibold'>Configuracion</Text></View>
                 </View>
 
                 <TouchableOpacity onPress={BtnCerrarSesion}>
                     <View className='flex-row items-center pl-4'>
                       <View><Entypo name="login" size={24} color="#4F9AFF" /></View>
-                      <View><Text className='pl-4 font-sans text-lg font-semibold text-azulPrimario'>Cerrar sesión</Text></View>
+                      <View><Text className='pl-4 font-sans text-base font-semibold text-azulPrimario'>Cerrar sesión</Text></View>
                     </View>
                 </TouchableOpacity>
 
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: '#086BEF', // Asumiendo que bg-azulPrimario es un azul
+    backgroundColor: '#F8D347', // Asumiendo que bg-azulPrimario es un azul
     width: '100%',
   },
   avatar: {

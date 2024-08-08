@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView} from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 
 const SemanalScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#F3F3F3" />
       <Text>Setting</Text>
     </SafeAreaView>
   );
