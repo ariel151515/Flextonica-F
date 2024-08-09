@@ -15,7 +15,8 @@ module.exports = {
 
         'amarillo': 'rgba(248, 211, 71, 1)',
         'azulPrimario':'rgba(79, 154, 255, 1)',
-        'grisBase':'rgba(214, 214, 214, 1)'
+        'grisBase':'rgba(217, 217, 217, 1)',
+        'grisClaro':'rgba(246, 246, 247, 1)'
       },
     },
   },

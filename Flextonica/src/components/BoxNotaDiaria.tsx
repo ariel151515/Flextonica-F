@@ -1,24 +1,24 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 // Define el tipo para las propiedades del componente `ItemComidas` (si hay alguna)
-interface ItemComidasProps {}
+interface ItemNotaProps {}
 
 // Componente `ItemComidas`
-export const ItemComidas: React.FC<ItemComidasProps> = () => {
+export const ItemNota: React.FC<ItemNotaProps> = () => {
   return (
     <View className='bg-white w-full px-5 py-4' style={{ borderTopWidth: 1, borderColor: '#F3F3F6' }}>
       <View className='flex justify-between flex-row items-center'>
         <View>
-          <Text>Omelette de Atom</Text>
-          <Text>100g = 345 Kcal  P:53g  C:32g  G:13g</Text>
+          <Text>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto lorem Ipsum
+            ha sido el texto de relleno estándar de las industrias
+         </Text>
         </View>
-        <TouchableOpacity>
-          <MaterialIcons name="notifications-active" size={24} color="#E7E6E6" />
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -39,23 +39,20 @@ export const BotonBox: React.FC<BotonBoxProps> = () => {
   );
 };
 
-// Define el tipo para las propiedades del componente `BoxComidas`
-interface BoxComidasProps {}
+// Define el tipo para las propiedades del componente `BoxAgua`
+interface BoxNotaDiariaProps {}
 
-// Componente `BoxComidas`
-export const BoxComidas: React.FC<BoxComidasProps> = () => {
+// Componente `BoxAgua`
+export const BoxNotaDiaria: React.FC<BoxNotaDiariaProps> = () => {
   return (
     <View className='flex w-full bg-white mt-2' style={styles.container}>
       <View className='bg-grisClaro w-full flex-row justify-between py-4 px-5'>
-        <Text className='text-black font-semibold text-lg'>Desayuno</Text>
+        <Text className='text-black font-semibold text-lg'>Nota</Text>
         <TouchableOpacity>
         <Entypo name="dots-three-vertical" size={24} color="#DBD9D9" />
         </TouchableOpacity>
       </View>
-      <ItemComidas />
-      <ItemComidas />
-      <ItemComidas />
-      <ItemComidas />
+      <ItemNota />
       <BotonBox />
     </View>
   );
@@ -73,5 +70,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
+    marginBottom:20
   },
 });

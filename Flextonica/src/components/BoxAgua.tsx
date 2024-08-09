@@ -5,16 +5,15 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
 
 // Define el tipo para las propiedades del componente `ItemComidas` (si hay alguna)
-interface ItemComidasProps {}
+interface ItemAguaProps {}
 
 // Componente `ItemComidas`
-export const ItemComidas: React.FC<ItemComidasProps> = () => {
+export const ItemAgua: React.FC<ItemAguaProps> = () => {
   return (
     <View className='bg-white w-full px-5 py-4' style={{ borderTopWidth: 1, borderColor: '#F3F3F6' }}>
       <View className='flex justify-between flex-row items-center'>
         <View>
-          <Text>Omelette de Atom</Text>
-          <Text>100g = 345 Kcal  P:53g  C:32g  G:13g</Text>
+          <Text>2 Tazas de 10</Text>
         </View>
         <TouchableOpacity>
           <MaterialIcons name="notifications-active" size={24} color="#E7E6E6" />
@@ -39,23 +38,20 @@ export const BotonBox: React.FC<BotonBoxProps> = () => {
   );
 };
 
-// Define el tipo para las propiedades del componente `BoxComidas`
-interface BoxComidasProps {}
+// Define el tipo para las propiedades del componente `BoxAgua`
+interface BoxAguaProps {}
 
-// Componente `BoxComidas`
-export const BoxComidas: React.FC<BoxComidasProps> = () => {
+// Componente `BoxAgua`
+export const BoxAgua: React.FC<BoxAguaProps> = () => {
   return (
     <View className='flex w-full bg-white mt-2' style={styles.container}>
       <View className='bg-grisClaro w-full flex-row justify-between py-4 px-5'>
-        <Text className='text-black font-semibold text-lg'>Desayuno</Text>
+        <Text className='text-black font-semibold text-lg'>Agua</Text>
         <TouchableOpacity>
-        <Entypo name="dots-three-vertical" size={24} color="#DBD9D9" />
+            <Entypo name="dots-three-vertical" size={24} color="#DBD9D9" />
         </TouchableOpacity>
       </View>
-      <ItemComidas />
-      <ItemComidas />
-      <ItemComidas />
-      <ItemComidas />
+      <ItemAgua />
       <BotonBox />
     </View>
   );

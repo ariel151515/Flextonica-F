@@ -76,14 +76,14 @@ export const FormularioLogin: React.FC = () => {
 
       <TouchableOpacity
             onPress={handleLogin}
-            className={`flex items-center justify-center mt-10 px-10 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-azulPrimario'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
+            className={`flex items-center justify-center mt-10 px-10 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-amarillo'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
             style={{ height:50}}
             disabled={isButtonDisabled}
           >
             {loading ? (
               <ActivityIndicator size="small" color="#fff" />
             ) : (
-              <Text className='font-sans font-bold text-base text-white'>Ingresar</Text>
+              <Text className='font-sans font-bold text-base text-black'>Ingresar</Text>
             )}
       </TouchableOpacity>
 

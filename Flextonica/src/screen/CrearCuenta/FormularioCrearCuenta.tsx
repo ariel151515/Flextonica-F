@@ -99,13 +99,13 @@ export const FormularioCrearCuenta: React.FC = () => {
        
       <TouchableOpacity
           onPress={handleRegistro}
-          className={`flex items-center justify-center mt-10 px-10 py-3 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-azulPrimario'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
+          className={`flex items-center justify-center mt-10 px-10 py-3 rounded-md ${isButtonDisabled ? 'bg-gray-400' : 'bg-amarillo'} ${isButtonDisabled ? 'opacity-60' : 'opacity-100'}`}
           disabled={isButtonDisabled}
         >
           {loading ? (
             <ActivityIndicator size="small" color="#fff" />
           ) : (
-            <Text className='font-sans font-bold text-base text-white'>Crear cuenta</Text>
+            <Text className='font-sans font-bold text-base text-black'>Crear cuenta</Text>
           )}
         </TouchableOpacity>
 

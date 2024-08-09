@@ -7,7 +7,7 @@ import Entypo from '@expo/vector-icons/Entypo';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 // Define el tipo para las propiedades del componente (si hay alguna)
-interface DatePicker {}
+interface DatePickerProps {}
 
 // Define el componente con tipos
 export const DatePicker: React.FC<DatePickerProps> = () => {

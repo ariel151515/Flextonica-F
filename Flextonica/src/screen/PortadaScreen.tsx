@@ -30,8 +30,8 @@ const PortadaScreen: React.FC = () => {
           <Text className='font-sans text-base text-grisTextoPortada text-center mt-2'>Transforma tu nutrición con una guía flexible y planificación avanzada para el control total de tus macronutrientes</Text>
           <View className='pt-5'>
               <TouchableOpacity onPress={() => navigation.navigate('CrearCuenta')}>
-                <View className='bg-azulPrimario rounded-lg py-3'>
-                  <Text className='font-sans text-base text-white text-center font-bold'>Crear cuenta</Text>
+                <View className='bg-amarillo rounded-lg py-3'>
+                  <Text className='font-sans text-base text-black text-center font-bold'>Crear cuenta</Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Login')}>
