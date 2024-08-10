@@ -5,6 +5,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Entypo from '@expo/vector-icons/Entypo';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import AntDesign from '@expo/vector-icons/AntDesign';
 
 // Define el tipo para las propiedades del componente (si hay alguna)
 interface DatePickerProps {}
@@ -15,13 +16,15 @@ export const DatePicker: React.FC<DatePickerProps> = () => {
     <TouchableOpacity onPress={() => alert('Fecha')}>
        <View className='flex flex-row gap-3'>
          <View>
-            <MaterialIcons name="date-range" size={18} color="black" />
+            <AntDesign name="leftcircle" size={18} color="#C1BDBD" />
+         </View>
+         <View className='flex justify-between flex-row'>
+            <Text className='font-sans text-sm'>10/08/2024</Text>
+            <Text className='px-2'>-</Text>
+            <Text className='font-sans text-sm'>10/08/2024</Text>
          </View>
          <View>
-            <Text className='font-sans text-sm'>Hoy</Text>
-         </View>
-         <View>
-             <Entypo name="chevron-down" size={18} color="black" />
+            <AntDesign name="rightcircle" size={18} color="#C1BDBD" />
          </View>
          </View>
     </TouchableOpacity>
