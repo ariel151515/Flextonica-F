@@ -5,8 +5,7 @@ interface BoxDiarioProps {}
 
 export const BoxDiario: React.FC<BoxDiarioProps> = () => {
   return (
-    <View className='shadow bg-white' style={styles.container}>
-
+    <View className='bg-white' style={styles.container}>
       <View className='flex flex-row justify-between bg-black'>
         <View className='bg-azulSecundario pt-2 ' style={{width:'24%', paddingLeft:20}}>
           <TextInput editable={false}>
@@ -118,7 +117,6 @@ export const BoxDiario: React.FC<BoxDiarioProps> = () => {
           </TextInput>
         </View>
       </View> 
-
     </View>
   );
 };

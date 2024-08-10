@@ -5,8 +5,7 @@ interface BoxSemanalProps {}
 
 export const BoxSemanal: React.FC<BoxSemanalProps> = () => {
   return (
-    <View className='shadow bg-white' style={styles.container}>
-
+  <View className='bg-white' style={styles.container}>
       <View className='flex flex-row justify-between bg-black'>
         <View className='bg-azulSecundario pt-2 ' style={{width:'24%', paddingLeft:20}}>
           <TextInput editable={false}>
