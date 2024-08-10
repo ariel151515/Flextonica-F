@@ -14,9 +14,11 @@ module.exports = {
         'grisClar':'#73767D',
 
         'amarillo': 'rgba(248, 211, 71, 1)',
-        'azulPrimario':'rgba(79, 154, 255, 1)',
+        'azulPrimario':'rgba(16, 126, 255, 1)',
+        'azulSecundario':'rgba(204, 227, 255, 1)',
         'grisBase':'rgba(217, 217, 217, 1)',
-        'grisClaro':'rgba(246, 246, 247, 1)'
+        'grisClaro':'rgba(246, 246, 247, 1)',
+        'grisOscuro':'rgba(149, 141, 141, 1)'
       },
     },
   },

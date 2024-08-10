@@ -9,9 +9,9 @@ interface HeaderProps {}
 export const Header: React.FC<HeaderProps> = () => {
   return (
     <View className='flex flex-row items-center justify-between px-5 py-3 bg-white'>
-      <Image source={avatar} style={{ width: 34, height: 34 }} />
+      <Image source={avatar} style={{ width: 28, height: 28 }} />
       <DatePicker />
-      <Ionicons name="notifications" size={24} color="black" />
+      <Ionicons name="notifications" size={18} color="black" />
     </View>
   );
 };

@@ -34,10 +34,10 @@ const TabNavigator: React.FC = () => {
             {route.name}
           </Text>
         ),
-        tabBarActiveTintColor: '#000',
-        tabBarInactiveTintColor: '#808080',
+        tabBarActiveTintColor: '#fff',
+        tabBarInactiveTintColor: '#A7CFFF',
         tabBarStyle: {
-          backgroundColor: '#fff',
+          backgroundColor: '#107EFF',
           height: 60, // Ajusta la altura de la barra de navegación
           paddingBottom: 10, // Ajusta el espaciado inferior para que los iconos estén centrados verticalmente
           paddingTop:6

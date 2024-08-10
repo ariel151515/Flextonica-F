@@ -14,7 +14,7 @@ export const ItemNota: React.FC<ItemNotaProps> = () => {
     <View className='bg-white w-full px-5 py-4' style={{ borderTopWidth: 1, borderColor: '#F3F3F6' }}>
       <View className='flex justify-between flex-row items-center'>
         <View>
-          <Text>
+          <Text className='font-sans text-sm'>
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto lorem Ipsum
             ha sido el texto de relleno estándar de las industrias
          </Text>
@@ -32,8 +32,8 @@ export const BotonBox: React.FC<BotonBoxProps> = () => {
   return (
     <TouchableOpacity className='bg-white w-full px-5 py-4' style={{ borderTopWidth: 1, borderColor: '#F3F3F6' }}>
       <View className='flex flex-row items-center gap-3'>
-        <FontAwesome6 name="plus" size={20} color="black" />
-        <Text className='text-base font-semibold'>AÑADIR ENTRADA</Text>
+        <FontAwesome6 name="plus" size={18} color="black" />
+        <Text className='font-sans text-sm font-semibold'>AÑADIR ENTRADA</Text>
       </View>
     </TouchableOpacity>
   );
@@ -47,9 +47,9 @@ export const BoxNotaDiaria: React.FC<BoxNotaDiariaProps> = () => {
   return (
     <View className='flex w-full bg-white mt-2' style={styles.container}>
       <View className='bg-grisClaro w-full flex-row justify-between py-4 px-5'>
-        <Text className='text-black font-semibold text-lg'>Nota</Text>
+        <Text className='font-sans text-base font-bold'>Nota</Text>
         <TouchableOpacity>
-        <Entypo name="dots-three-vertical" size={24} color="#DBD9D9" />
+        <Entypo name="dots-three-vertical" size={18} color="#DBD9D9" />
         </TouchableOpacity>
       </View>
       <ItemNota />

@@ -15,13 +15,13 @@ export const DatePicker: React.FC<DatePickerProps> = () => {
     <TouchableOpacity onPress={() => alert('Fecha')}>
        <View className='flex flex-row gap-3'>
          <View>
-            <MaterialIcons name="date-range" size={24} color="black" />
+            <MaterialIcons name="date-range" size={18} color="black" />
          </View>
          <View>
-            <Text className='font-sans text-base'>Hoy</Text>
+            <Text className='font-sans text-sm'>Hoy</Text>
          </View>
          <View>
-             <Entypo name="chevron-down" size={24} color="black" />
+             <Entypo name="chevron-down" size={18} color="black" />
          </View>
          </View>
     </TouchableOpacity>
